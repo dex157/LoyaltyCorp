@@ -1,0 +1,5 @@
+$screen-xs-min: 425px;
+
+@mixin max-xs { @media (max-width: #{$screen-xs-min}) {@content;} }
+@mixin min-xs { @media (min-width: #{$screen-xs-min}) {@content;} }
+

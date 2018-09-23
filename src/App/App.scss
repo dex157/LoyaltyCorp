@@ -1,0 +1,24 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: $background-color;
+}
+
+.link {
+  color: $link-color;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link.router-link-exact-active {
+  border-bottom: 2px solid;
+}

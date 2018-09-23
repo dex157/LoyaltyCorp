@@ -1,0 +1,57 @@
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: relative;
+
+  @include max-xs {
+    & {
+      background-color: $background-color;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    & .nav-list__element {
+      background-color: $background-color;
+      padding: 6px 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+.nav-list--folded {
+  display: none;
+
+  @include min-xs {
+    display: flex;
+  }
+}
+
+.nav-list__element {
+  padding: 0 6px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.top-navigation__button {
+  display: block;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+
+  @include min-xs {
+    display: none;
+  }
+}
+
+.navigation-button {
+  width: 25px;
+}
